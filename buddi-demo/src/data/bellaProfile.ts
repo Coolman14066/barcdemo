@@ -1,0 +1,68 @@
+import type { BellaProfile, PlanStep } from '../types';
+
+export const bellaProfile: BellaProfile = {
+  name: 'Bella Roxas',
+  age: 24,
+  location: 'London, UK',
+  currentSavings: 8000,
+  weddingGoalAmount: 40000,
+  weddingGoalYears: 4,
+  houseGoalYears: 12,
+  riskComfort: 'low_to_medium',
+  monthlyBudget: 600,
+  weddingMonthlyTarget: 550,
+  homeSeedMonthly: 50,
+};
+
+export const initialPlanSteps: PlanStep[] = [
+  {
+    id: 1,
+    title: 'Lock in your safety buffer',
+    icon: 'safety-buffer',
+    summary: "Keep £3,000 in your current account so surprise bills don't derail your plans.",
+    expandedText: "Keep £3,000 in your **Barclays Current Account** as an emergency buffer. Buddi will warn you before any transfer takes you below it.",
+    buttonText: 'Confirm safety buffer',
+    status: 'pending',
+    revenueCategory: 'Deposits / NII',
+  },
+  {
+    id: 2,
+    title: 'Put your Wedding Fund on autopilot',
+    icon: 'wedding-fund',
+    summary: 'Move £550/month into a labelled Wedding Fund pot from your current account.',
+    expandedText: "Automatically transfer £550/month into a **Wedding Fund savings pot**. On track for £40,000 in 4 years with modest growth.",
+    buttonText: 'Start Wedding autopay',
+    status: 'pending',
+    revenueCategory: 'Deposits / NII',
+  },
+  {
+    id: 3,
+    title: "Build a 'Future Home' seed with round-ups",
+    icon: 'home-seed',
+    summary: 'Round up your Barclays card purchases into a new Future Home pot.',
+    expandedText: "Round up **Barclays debit card** purchases to the nearest £1 into your Future Home pot. Capped at £50/month, adjustable anytime.",
+    buttonText: 'Turn on round-ups',
+    status: 'pending',
+    revenueCategory: 'Cards / Interchange',
+  },
+  {
+    id: 4,
+    title: "Add a small 'Home Growth' investment sleeve",
+    icon: 'home-growth',
+    summary: 'Invest £50/month in a low-risk diversified fund for your future home.',
+    expandedText: "Invest £50/month into a low-risk, diversified portfolio via **Barclays Investments**. Pause anytime or speak to an adviser first.",
+    buttonText: 'Start Home Growth sleeve',
+    status: 'pending',
+    revenueCategory: 'Investments / AUM',
+  },
+  {
+    id: 5,
+    title: 'Keep your retirement on track',
+    icon: 'retirement',
+    summary: 'Increase your pension contribution by +1% at your next pay rise.',
+    expandedText: "Buddi will suggest a +1% **pension contribution** increase at your next pay rise. One tap to accept or snooze the nudge.",
+    buttonText: 'Set pension nudge',
+    status: 'pending',
+    revenueCategory: 'Retirement / Long-term AUM',
+  },
+];
