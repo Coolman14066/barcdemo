@@ -22,7 +22,7 @@ interface IconProps {
 }
 
 const Icon: React.FC<IconProps> = ({ name, className = 'h-6 w-6' }) => {
-  const icons: Record<IconName, JSX.Element> = {
+  const icons: Record<IconName, React.ReactElement> = {
     'current-account': (
       <svg
         viewBox="0 0 24 24"

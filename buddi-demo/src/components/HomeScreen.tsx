@@ -45,7 +45,6 @@ const formatCurrency = (amount: number) => {
 
 const HomeScreen: React.FC = () => {
   const { profile, state } = useDemoContext();
-  const projectedHomeSeedFiveYears = profile.homeSeedMonthly * 12 * 5;
 
   const accountCards: AccountCard[] = [
     {
