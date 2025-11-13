@@ -1,0 +1,15 @@
+[build]
+  # Directory where your package.json is located
+  base = "buddi-demo"
+
+  # Command to build your Vite app
+  command = "npm run build"
+
+  # Directory where the built files are output
+  publish = "dist"
+
+# SPA redirect - ensures React Router works properly
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
